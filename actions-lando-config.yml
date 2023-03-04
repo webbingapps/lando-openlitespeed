@@ -1,0 +1,14 @@
+# Disable the "core" openlitespeed plugins
+disablePlugins:
+  - lando-openlitespeed
+
+# Make sure we are dogfooding this plugin for testing purposes
+plugins:
+  "@lando/openlitespeed": /home/runner/work/openlitespeed/openlitespeed
+
+# Disable metrics reporting
+stats:
+  - report: false
+    url: https://metrics.lando.dev
+
+
